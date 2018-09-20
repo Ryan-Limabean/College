@@ -1,0 +1,2 @@
+[20-Sep-2018 09:21:48 UTC] PHP Fatal error:  Class 'Requests_Hooks' not found in /app/public/wp-includes/class-wp-http-requests-hooks.php on line 17
+[20-Sep-2018 09:21:48 UTC] PHP Fatal error:  Class 'Requests_Hooks' not found in /app/public/wp-includes/class-wp-http-requests-hooks.php on line 17
