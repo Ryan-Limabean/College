@@ -17,7 +17,7 @@
 
       <div class="grid-x grid-padding-x">
         <div class="large-12 cell">
-          <div class="callout">
+          <div class="test">
             <h3>We&rsquo;re stoked you want to try Foundation! </h3>
             <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
             <p>Once you've exhausted the fun in this document, you should check out:</p>

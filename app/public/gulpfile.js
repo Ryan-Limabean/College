@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var $    = require('gulp-load-plugins')();
+var browserSync = require('browser-sync').create();
 
 var sassPaths = [
   'node_modules/foundation-sites/scss',
@@ -16,9 +17,20 @@ gulp.task('sass', function() {
     .pipe($.autoprefixer({
       browsers: ['last 2 versions', 'ie >= 9']
     }))
-    .pipe(gulp.dest('css'));
+    .pipe(gulp.dest('wp-content/themes/college-theme/css'))
+    .pipe(browserSync.reload({
+      stream: true
+    }))
 });
 
-gulp.task('default', ['sass'], function() {
+gulp.task('default', ['browserSync','sass'], function() {
   gulp.watch(['scss/**/*.scss'], ['sass']);
 });
+
+gulp.task('browserSync', function() {
+  browserSync.init({
+    server: {
+      baseDir: './'
+    },
+  })
+})
