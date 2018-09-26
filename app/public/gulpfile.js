@@ -29,8 +29,7 @@ gulp.task('default', ['browserSync','sass'], function() {
 
 gulp.task('browserSync', function() {
   browserSync.init({
-    server: {
-      baseDir: './'
-    },
+    proxy: "http://college.local/",
+    port: 80
   })
 })
